@@ -1,0 +1,136 @@
+    1  apt-get update
+    2  apt-get syslog-ng
+    3  apt-get install syslog-ng
+    4  setxkbmap fr
+    5  apt-get install iptables
+    6  iptables -L -v
+    7  iptables -A  -i eth0 -p tcp   --dport 22  -j OG --log-prefix PERMIT 
+    8  ifconfig
+    9  iptables -A  -i eth0 -p tcp   --dport 22  -j OG --log-prefix PERMIT 
+   10  iptables-restore 
+   11  iptables -L -v
+   12  iptables-restore /home/kali/Desktop/conf-iptables-rpb.txt
+   13  iptables -L -v
+   14  apt-get install appache
+   15  apt-get install appache2
+   16  apt-get install apache2
+   17  ./apache2
+   18  systemctl start apache2
+   19  ps aux | grep apache
+   20  /etc/init.d/apache2 status
+   21  ps aux 
+   22  netstat -a
+   23  netstat
+   24  ps aux | grep 80
+   25  apt-get install ftpd
+   26  systemctl start ftpd
+   27  systemctl start ftp
+   28  netstat -a 
+   29  ps aux | grep apache
+   30  ps aux
+   31  ps aux -v
+   32  ps -v
+   33  netstat -ant | grep -i LiS --color
+   34  apt-get install ssh
+   35  systemctl start ssh
+   36  netstat -ant | grep -i LiS --color
+   37  apt-get install ftp
+   38  systemctl start ftp
+   39  systemctl start ftpd
+   40  openssl req -new -x509 -days 365 -nodes -out /etc/ssl/certs/mailserver.crt -keyout /etc/ssl/private/mailserver.key
+   41  Common Name (eg, YOUR name) [] : webmail.mondomaine.com
+   42  Common Name (ee) [] : webmail.mondomaine.com
+   43  Common Name (ee) [] : webma@il.mondomaine.com
+   44  chmod 440 /etc/ssl/private/mailserver.key
+   45  a2enmod ssl
+   46  systemctl restart apache2
+   47  vhost https
+   48  netstat -ant | grep -i LiS --color
+   49  netcat -l 127.0.0.1 -p 80
+   50  netcat -l 17.17.17.17 -p 80
+   51  ifconfig
+   52  netcat -l 127.0.0.1 -p 8080
+   53  iptables -n -L
+   54  history
+   55  history >> historiquecommande.txt
+   56  ls
+   57  history >>/home/kali/Desktop/historiquecommande.txt
+   58  netstat -ant | grep -i LiS --color
+   59  apt-get install maria
+   60  netstat -ant | grep -i LiS --color
+   61  systemctl restart maria
+   62  systemctl restart mariadb
+   63  netstat -ant | grep -i LiS --color
+   64  sudo ufw allow ssh
+   65  sudo open  ssh
+   66  open ssh
+   67  open sshd
+   68  service ssh start
+   69  netstat -ant | grep -i LiS --color
+   70  service ftp start
+   71  service ftpd start
+   72  apt-get install ftp
+   73  service ftp start
+   74  service ftpd start
+   75  service 23 start
+   76  systemctl restart ftp
+   77  systemctl restart ftpd
+   78  netstat -ant | grep -i LiS --color
+   79  apt-get install telnet
+   80  service telnet start
+   81  systemctl restart telnet
+   82  nmap localhost
+   83  ifconfig
+   84  systemctl restart telnet
+   85  systemctl restart telnetd
+   86  systemctl restart inetd
+   87  nmap localhost
+   88  systemctl status inetd
+   89  nmap localhost
+   90  man telnet
+   91  netstat -ant | grep -i LiS --color
+   92  nmap localhost
+   93  iptables -n -L
+   94  iptables -F
+   95  iptables -n -L
+   96  iptables-restore /home/kali/Desktop/conf-iptables-rpb.txt
+   97  iptables -n -L
+   98  iptables-restore /home/kali/Desktop/conf-iptables-rpb.txt
+   99  iptables -n -L
+  100  apt-get install syslog-ng
+  101  apt-get install squid
+  102  iptables -n -L
+  103  service squid start
+  104  nmap localhost
+  105  /etc/squid/conf.d
+  106  vi conf.d
+  107  nmap localhost
+  108  cd
+  109  systemctl start telnet.service
+  110  apt install telnet
+  111  nmap localhost
+  112  apt-get install telnetd
+  113  service telnetd start
+  114  service telnet start
+  115  /etc/init.d/inetd restart
+  116  systemctl status inetd
+  117  net
+  118  netstat -a
+  119  netstat -antpl
+  120  netstat -ant | grep -i LiS --color
+  121  systemctl status mariadb.service
+  122  systemctl restart mariadb.service
+  123  cd ..
+  124  ls
+  125  pwd
+  126  cd var
+  127  ls
+  128  cd www
+  129  ls
+  130  cd html
+  131  touch Backup
+  132  mv Backup
+  133  rm Backup
+  134  mkdir Backup
+  135  mkdir Restore
+  136  nano /etc/syslog-ng/syslog-ng.conf
